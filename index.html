@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <ul v-for="email in emails">
-            <li class="li-email">{{email}}</li>
+            <li v-if="emails.length === 10" class="li-email">{{email}}</li>
         </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
